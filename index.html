@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Refresh" content="5;Files\HTML.zip"></head>
+  <body>
+    <!-- Display the countdown timer in an element -->
+    <p id="demo"></p>
+
+    <script>
+      // Set the date we're counting down from
+      var Count = 5;
+      
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = Count;
+
+      // If the count down is finished, write some text
+      var x = setInterval(function() {
+        if(Count==0){
+          document.getElementById("demo").innerHTML = "Downloading now...";
+        }
+        else {
+          Count--;
+          document.getElementById("demo").innerHTML = Count;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
